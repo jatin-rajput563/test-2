@@ -4,12 +4,96 @@ section {
     overflow: hidden;
 }
 
-.outfit-font {
-    font-family: "Outfit", sans-serif;
+.pr-221 {
+    margin-right: 221px;
+}
+
+.pt-136 {
+    padding-top: 136px;
+}
+
+.pt-24 {
+    padding-top: 24px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.mt-47 {
+    margin-top: 47px;
+}
+
+.mt-19 {
+    margin-top: 19px;
+}
+
+.pt-14 {
+    padding-top: 14px;
+}
+
+.pt-12 {
+    padding-top: 12px;
+}
+
+.pt-32 {
+    padding-top: 32px;
+}
+
+.pt-18 {
+    padding-top: 18px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.ml-24 {
+    margin-left: 24px;
+}
+
+.pb-200 {
+    padding-bottom: 200px;
+}
+
+.gap-18 {
+    gap: 18px;
 }
 
 .w-50px {
     width: 50px;
+}
+
+.z-5 {
+    z-index: 5;
+}
+
+.mx-146 {
+    max-width: 146px;
+}
+
+.mx-187 {
+    max-width: 187px;
+}
+
+.mx-316 {
+    max-width: 316px;
+}
+
+.mx-200 {
+    max-width: 200px;
+}
+
+.mx-191 {
+    max-width: 191px;
+}
+
+.mx-116 {
+    max-width: 116px;
+}
+
+.outfit-font {
+    font-family: "Outfit", sans-serif;
 }
 
 .show-navbar {
@@ -25,7 +109,8 @@ section {
 }
 
 .get-btn:hover {
-    transform: scale(1.1);
+    background: white;
+    color: #32C8F1;
 }
 
 .menu-lines {
@@ -41,17 +126,13 @@ section {
     background-color: white;
 }
 
-.z-5 {
-    z-index: 5;
-}
-
 .rotate40 {
     transform: rotate(40deg);
 
 }
 
 .rotate-45 {
-    transform: rotate(-45deg);
+    transform: rotate(-40deg);
 
 }
 
@@ -94,19 +175,12 @@ section {
     color: white;
     display: flex;
     margin: auto;
+    z-index: 2;
 }
 
 .home-btn:hover {
     background: white;
     color: #3A3EF5;
-}
-
-.mx-146 {
-    max-width: 146px;
-}
-
-.mx-187 {
-    max-width: 187px;
 }
 
 .para-99 {
@@ -147,22 +221,6 @@ section {
     gap: 24px;
     border-radius: 24px;
     background: linear-gradient(180deg, rgba(59, 40, 246, 0.22) 0%, rgba(59, 40, 246, 0) 100%);
-}
-
-.mx-316 {
-    max-width: 316px;
-}
-
-.mx-200 {
-    max-width: 200px;
-}
-
-.mx-191 {
-    max-width: 191px;
-}
-
-.mx-116 {
-    max-width: 116px;
 }
 
 /* ============ */
@@ -257,63 +315,18 @@ section {
 }
 
 .icon {
-    padding: 12px;
+    height: 40px;
+    width: 40px;
     border-radius: 100px;
     background: linear-gradient(103.52deg, #3A3EF5 18.99%, #32C8F1 82.34%);
     transition: all 50ms linear;
-    padding-top: 7px;
-    padding-left: 10px;
 }
 
 .icon:hover {
     transform: scale(1.1)
 }
 
-.pr-221 {
-    margin-right: 221px;
-}
-
-.pt-136 {
-    padding-top: 136px;
-}
-
-.pt-24 {
-    padding-top: 24px;
-}
-
-.mt-24 {
-    margin-top: 24px;
-}
-
-.mt-47 {
-    margin-top: 47px;
-}
-
-.pt-14 {
-    padding-top: 14px;
-}
-
-.pt-12 {
-    padding-top: 12px;
-}
-
-.pt-32 {
-    padding-top: 32px;
-}
-
-.pt-18 {
-    padding-top: 18px;
-}
-
-.mt-24 {
-    margin-top: 24px;
-}
-
-.gap-18 {
-    gap: 18px;
-}
-
-.text-grey:hover {
+.text-grey-hover:hover {
     color: white;
 }
 
@@ -331,6 +344,26 @@ section {
     animation: up-and-down 3s ease-in-out infinite;
 }
 
+.slick-next:before {
+    content: '→';
+    display: none !important;
+}
+
+.slick-prev:before {
+    content: '→';
+    display: none !important;
+}
+
+.Copyright-para {
+    max-width: 1140px;
+    height: 44px;
+    gap: 20px;
+    border-top: 2px solid;
+    border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 47%, rgba(255, 255, 255, 0) 100%) 2;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
 @keyframes up-and-down {
     0% {
         transform: translateY(0);
@@ -343,35 +376,6 @@ section {
     100% {
         transform: translateY(0);
     }
-}
-
-
-.ml-24 {
-    margin-left: 24px;
-}
-
-.slick-next:before {
-    content: '→';
-    display: none !important;
-}
-
-.slick-prev:before {
-    content: '→';
-    display: none !important;
-}
-
-.pb-200 {
-    padding-bottom: 200px;
-}
-
-.Copyright-para {
-    max-width: 1140px;
-    height: 44px;
-    gap: 20px;
-    border-top: 2px solid;
-    border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 47%, rgba(255, 255, 255, 0) 100%) 2;
-    margin-top: 60px;
-    margin-bottom: 30px;
 }
 
 @media (max-width:992px) {
@@ -394,7 +398,7 @@ section {
         bottom: 0;
         right: -100% !important;
         top: 0%;
-        transition: all 200ms linear;
+        transition: all 500ms linear;
         z-index: 5;
     }
 
@@ -530,7 +534,6 @@ section {
         padding-left: 12px !important;
         padding-right: 12px !important;
     }
-
 }
 
 @media (max-width:576px) {
@@ -554,8 +557,13 @@ section {
         align-items: center;
     }
 
-
     .gap-18 {
         gap: 7px;
+    }
+}
+
+@media (max-width:576px) {
+    .pb-10 {
+        padding-bottom: 10px;
     }
 }

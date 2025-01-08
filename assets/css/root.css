@@ -20,6 +20,7 @@
     --lh-86: 86.4px;
     /* ----color---- */
     --grey: #B3B2B6;
+    --dark-white: #CDCDD2;
 }
 
 .fs-16 {
@@ -89,14 +90,22 @@
 }
 
 /* ==========color============== */
+.text-grey-hover {
+    color: var(--grey);
+}
+
 .text-grey {
     color: var(--grey);
 }
 
+.dark-white {
+    color: var(--dark-white);
+}
+
 @media (max-width:576px) {
     :root {
-        --fs-72: 32px;
+        --fs-72: 50px;
         --fs-48: 28px;
-        --lh-86: 44px;
+        --lh-86: 53px;
     }
 }
