@@ -363,6 +363,18 @@
     display: none !important;
 }
 
+.slick-dots li button:before {
+    font-size: 10px !important;
+    height: 10px;
+    width: 10px;    
+    color: white !important;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 100% !important;
+    color: #32C8F1 !important;
+}
+
 .Copyright-para {
     max-width: 1140px;
     height: 44px;
@@ -477,6 +489,10 @@
 @media (max-width:1200px) {
     .pr-221 {
         margin-right: 109px !important;
+    }
+
+    .z-index-1 {
+        z-index: 1;
     }
 }
 
