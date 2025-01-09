@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-section {
-    overflow: hidden;
-}
-
 .pr-221 {
     margin-right: 221px;
 }
@@ -111,6 +107,7 @@ section {
 .get-btn:hover {
     background: white;
     color: #32C8F1;
+    transition: all 200ms linear;
 }
 
 .menu-lines {
@@ -127,12 +124,12 @@ section {
 }
 
 .rotate40 {
-    transform: rotate(40deg);
+    transform: rotate(39deg);
 
 }
 
 .rotate-45 {
-    transform: rotate(-40deg);
+    transform: rotate(-42deg);
 
 }
 
@@ -143,19 +140,11 @@ section {
 
 
 .navbar-link {
-    font-family: var(--poppins);
-    font-size: var(--fs-lg);
-    font-weight: 400;
-    color: var(--dark);
+    color: white;
 }
 
 .navbar-link:hover {
-    transform: scale(1.5);
-}
-
-.navbar-link:hover {
-    color: var(--sec);
-    -webkit-text-stroke: 1px var(--sec);
+    color: #32C8F1 !important;
 }
 
 .home-bg {
@@ -175,12 +164,14 @@ section {
     color: white;
     display: flex;
     margin: auto;
-    z-index: 2;
+    position: relative;
+    z-index: 1;
 }
 
 .home-btn:hover {
     background: white;
-    color: #3A3EF5;
+    color: #32C8F1;
+    transition: all 200ms linear;
 }
 
 .para-99 {
@@ -195,6 +186,24 @@ section {
 }
 
 .para-99::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding-right: 1px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    mask-composite: exclude;
+}
+
+.para-99-2 {
+    max-width: 365px;
+    height: 114px;
+    position: relative;
+}
+
+.para-99-2::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -364,6 +373,18 @@ section {
     margin-bottom: 30px;
 }
 
+.slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    color: #32C8F1 !important;
+}
+
 @keyframes up-and-down {
     0% {
         transform: translateY(0);
@@ -447,6 +468,7 @@ section {
     .z-index-1 {
         z-index: 1;
     }
+
     .pt-xl-50 {
         padding-top: 123px;
     }
@@ -530,6 +552,23 @@ section {
         padding-left: 12px !important;
         padding-right: 12px !important;
     }
+
+    .para-99-2::before {
+        display: none;
+    }
+
+    .para-99-1::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        padding-right: 1px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+        mask:
+            linear-gradient(#000 0 0) content-box,
+            linear-gradient(#000 0 0);
+        mask-composite: exclude;
+
+    }
 }
 
 @media (max-width:576px) {
@@ -560,4 +599,5 @@ section {
     .pb-10 {
         padding-bottom: 10px;
     }
+
 }
