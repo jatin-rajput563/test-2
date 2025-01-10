@@ -366,7 +366,7 @@
 .slick-dots li button:before {
     font-size: 10px !important;
     height: 10px;
-    width: 10px;    
+    width: 10px;
     color: white !important;
 }
 
@@ -454,12 +454,6 @@
 
     .burger-pic {
         display: none !important;
-    }
-
-    .col-md-4 {
-        width: 33.33%;
-        padding-left: 12px;
-        padding-right: 12px;
     }
 
     .pt-sm-50 {
@@ -557,16 +551,6 @@
 
     .pt-32 {
         padding-top: 20px;
-    }
-
-    .col-4 {
-        width: unset !important;
-    }
-
-    .col-6-sm {
-        width: 50% !important;
-        padding-left: 12px !important;
-        padding-right: 12px !important;
     }
 
     .para-99-2::before {
